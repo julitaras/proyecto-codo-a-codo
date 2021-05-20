@@ -83,7 +83,7 @@ h4{
 
 /*header*/
 .site-header.inicio{/*como aqui le quiero dar lo mismo a mis dos clases lo hago asi*/
-  background: url(../assets/imges/header.jpg);
+  background: url(../assets/images/header.jpg);
   background-position: center center; /*posicion de la imagen*/
   background-size: cover;
   height: 100vh;/*tamaño de la imagen y el vh es para que se adecue para cualquier pantalla*/
@@ -210,7 +210,7 @@ h4{
 
 /**COnntacto home**/
 .imagen-contacto {
-  background-image: url(../assets/imges/encuentra.jpg);
+  background-image: url(../assets/images/encuentra.jpg);
   background-position: center center;
   background-size: cover;
   height: 40rem;
@@ -308,7 +308,7 @@ h4{
 .testimonial blockquote::before{/**crea elemento antes**/
 
   content:'';
-  background-image: url(../assets/imges/comilla.svg);
+  background-image: url(../assets/images/comilla.svg);
   width: 3.5rem;
   height: 3.5rem;
   position: absolute;
