@@ -1,0 +1,342 @@
+html{
+  box-sizing: border-box;/**siempre va**//
+  font-size: 62.5%; /*reset para rems- 62.5%=10px de 16px*/
+}
+*, *::before, *::after{/**siempre va**/
+  box-sizing: inherit;
+}
+/*fuentes*/
+body{
+  font-family: 'Lato', sans-serif;/*sacada de google fonts son gratis*/
+  font-size: 1.6rem;
+  line-height: 2;
+
+}
+
+/**GLobales**/
+
+img{/** modifica todas las imgenes para que se pongan
+       coreectamente a su contenedor**/
+  max-width: 100%;
+}
+.contenedor{
+  max-width: 120rem;/*maximo de pixeles 120 =1200px*/
+  margin-left: auto;
+  margin-right: auto; /*margenes para centrar*/
+  width: 90%;
+}
+h1{
+  font-size: 3.8rem;
+}
+h2{
+  font-size: 3.4rem;
+}
+h3{
+  font-size: 3rem;
+}
+h4{
+  font-size: 2.6rem;
+}
+
+/** Utilidades **/
+
+.seccion{ /*separaciones globales*/
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}
+.fw-300{ /*claridad o mas oscura la letra*/
+  font-weight: 300;
+}
+.centrar-texto{
+  text-align: center;
+}
+.d-block{
+  display: block!important;/**toma todo el tamaño
+                              el impportant le da prioridad en el caso
+                              de que estuviera otro display mas abajo**/
+}
+
+/**Botones**/
+.boton{
+  color: white;/**de letras**/
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem;/** **/
+  margin-top:3rem;
+  display: inline-block;/**imagenes y botones que me lleven a link
+                        tengo que cambiarle el display sino no puedo aplicar margin
+                        ni padding**/
+
+  text-align: center;
+
+
+}
+.boton-amarillo{
+  background-color: #E08709;
+
+}
+.boton-verde{
+  background-color: #71B100;
+}
+
+/*header*/
+.site-header.inicio{/*como aqui le quiero dar lo mismo a mis dos clases lo hago asi*/
+  background: url(../assets/imges/header.jpg);
+  background-position: center center; /*posicion de la imagen*/
+  background-size: cover;
+  height: 100vh;/*tamaño de la imagen y el vh es para que se adecue para cualquier pantalla*/
+  min-height: 60rem;/*minimo de pixeles 60=600px*/
+}
+
+.contenido-header{/*diseño entre barra y venta de casas y dep...*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+}
+
+.contenido-header h1{
+  color:white;
+  padding-top: 2rem;/*separacion hacia adentro*/
+  max-width: 60rem; /*no pasa de la cantidad y crea nueva linea*/
+  line-height: 5rem;/*interlineado*/
+}
+
+.barra{
+  display: flex; /*habilito flex paravcolocar el logotipo lado izquierod y los link lados derecho*/
+
+  justify-content: space-between;/*posicion del flex*/
+  align-items: center; /*se alinea lo que separamos*/
+  padding-top: 3rem; /*espacio hacia dento del elemento*/
+
+}
+
+/**Navegacion**/
+.navegacion a{
+  color: white;
+  text-decoration: none;/*elimina el subrayado*/
+  font-size: 1.8rem;/*tamaño fuente 1.8 a 18*/
+  margin-right: 2rem;
+}
+
+.navegacion a:hover{
+  color: #71B100;/*color cuando pase por el boton*/
+}
+.navegacion a:last-of-type{
+  margin: 0; /*para que ul ultimo no tenga espacio a la derecha*/
+}
+
+
+/*iconos nosotros*/
+
+
+.iconos-nosotros{
+  display: flex;
+  justify-content: space-between;/*separacion*/
+
+
+}
+.icono{
+  flex-basis: calc(33.3% - 1rem);
+  text-align: center;/*alineacion*/
+}
+.icono h3{
+  text-transform:uppercase;/*modifica a mayusculas*/
+}
+
+
+/** anuncios**/
+.contenedor-anuncios{
+  display:flex;
+  justify-content: space-between;/*separacion*/
+  width: 98%;
+  flex-wrap: wrap;
+
+}
+
+.anuncio{
+  flex-basis:calc(33.3% - 1rem);
+  border-style: solid; /**hay mas tipos (double..etc)**/
+  border-color: #B5B5B5;
+  border-width: 1px;
+  /**tambien puedo poner asi
+  border: 1px solid #B5B5B5; **/
+
+  background: #F5F5F5;/**color de fondo**/
+}
+
+.contenido-anuncio{
+  padding: 2rem;/**centrado de 2 rem**/
+}
+
+.contenido-anuncio h3, .contenido-anuncio p{
+  margin: 0;
+
+}
+
+
+.precio{
+  color: #71B100;
+  font-weight: 700; /**negrita**/
+}
+
+.iconos-caracteristicas{
+  list-style: none;
+  padding:0;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.iconos-caracteristicas li{
+  /**flex: 1;**/
+  display: flex;
+
+}
+
+.iconos-caracteristicas li img{
+  margin-right: 2rem;
+}
+
+.ver-todas{
+  display: flex;
+  width: 95%;
+  justify-content: flex-end;
+
+}
+
+
+/**COnntacto home**/
+.imagen-contacto {
+  background-image: url(../assets/imges/encuentra.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.contenido-contacto{
+  flex: 1;/**factor de crecimiento
+           divide la cantidad de pixeles con la cantidad de elemenetos que tenemos**/
+  color: white;/****/
+
+}
+.contenido-contacto p{
+  font-size: 1.8rem;
+
+}
+
+
+/**seccion inferior**/
+.seccion-inferior{
+  display: flex; /**se colocan una seccion al lado de la otra**/
+  justify-content:space-between;
+}
+
+
+.seccion-inferior .blog{
+  flex-basis: 60%;
+}
+.seccion-inferior .testimoniales{
+  flex-basis: calc(40% - 2rem);
+}
+
+
+.entrada-blog{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;/**separacion con el siguiente elmento**/
+
+}
+
+.entrada-blog:last-of-type{
+  margin-bottom: 0;
+}
+
+.entrada-blog .imagen{
+  flex-basis: 40%;
+
+}
+
+.entrada-blog .texto-entrada{
+  flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada a{
+  color:black;
+  text-decoration: none;
+}
+.texto-entrada h4{
+  margin: 0;
+  line-height: 1.4;
+
+}
+
+.texto-entrada h4::after{/**crea un elemento despues del elemento**/
+  content: '';
+  display: block;
+  width: 15rem;
+  height: .5rem;
+  background-color: green;
+
+  margin-top: 1rem;
+}
+
+.texto-entrada span{
+  color: #E08709;
+}
+
+
+/**testimoniales**/
+.testimonial{
+  background-color: #71B100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color:#ffffff;
+  border-radius: 2rem;
+}
+
+.testimonial p{
+  text-align:right;
+
+}
+
+.testimonial blockquote::before{/**crea elemento antes**/
+
+  content:'';
+  background-image: url(../assets/imges/comilla.svg);
+  width: 3.5rem;
+  height: 3.5rem;
+  position: absolute;
+  left: -2rem;
+
+}
+
+.testimonial blockquote{/**en el padre va el relativo y en el hijo el absouto**/
+  position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
+}
+
+
+/**footer**/
+.site-footer{
+  background-color: #333333;
+  margin: 0;
+
+}
+
+.copyrigth{
+  margin: 0;
+  color: #ffffff;
+}
+
+.contenedor-footer{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
