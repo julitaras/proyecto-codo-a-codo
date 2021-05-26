@@ -1,5 +1,5 @@
 html{
-  box-sizing: border-box;/**siempre va**//
+  box-sizing: border-box;/**siempre va**/
   font-size: 62.5%; /*reset para rems- 62.5%=10px de 16px*/
 }
 *, *::before, *::after{/**siempre va**/
