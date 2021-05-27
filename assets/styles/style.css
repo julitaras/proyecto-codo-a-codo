@@ -335,7 +335,6 @@ h4 {
 .contenedor-footer {
   padding: 3rem 0;
   text-align: center;
-  float: left;
 }
 @media (min-width: 768px) {
   .contenedor-footer {
