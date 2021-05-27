@@ -87,7 +87,9 @@ footer {
     border-top: 2px solid rgba(0, 0, 0, 0.24);  
     /*  poner footer abajo */
     position: fixed;
+    position: absolute;
     left: 0;
+
     bottom: 0;
     width: 100%;
 }
