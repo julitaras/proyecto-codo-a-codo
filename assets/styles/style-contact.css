@@ -21,7 +21,7 @@ footer {
     flex-shrink: 0;
 }
 
-.copyright {
-    margin: 0 !important;
-    color: #ffffff !important;
+p {
+    margin: 0;
+    color: #ffffff;
 }
