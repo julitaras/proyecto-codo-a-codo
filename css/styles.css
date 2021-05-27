@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+    font-size: 62.5%; 
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -11,13 +11,13 @@ body {
     line-height: 2;
 }
 
-/** Globales **/
+
 img {
     max-width: 100%;
 }
 .contenedor {
     width: 95%;
-    max-width: 120rem; /** = 1200px; **/
+    max-width: 120rem;
     margin: 0 auto;
 }
 h1 {
@@ -33,7 +33,6 @@ h4 {
     font-size: 2.6rem;
 }
 
-/** Utilidades **/
 .seccion {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -51,7 +50,6 @@ h4 {
     max-width: 800px;
 }
 
-/** Botones **/
 .boton {
     color: #ffffff;
     font-weight: 700;
@@ -82,7 +80,7 @@ h4 {
 }
 
 
-/* Header */
+
 .site-header {
     background-color: #333333;
     padding: 1rem 0 3rem 0;
@@ -123,7 +121,7 @@ h4 {
     }
 }
 
-/** Navegacion **/
+
 .navegacion a {
     color: #ffffff;
     text-decoration: none;
@@ -144,7 +142,7 @@ h4 {
     color: #71B100;
 }
 
-/** Mobile Menu **/
+
 .mobile-menu img {
     width: 5rem;
 }
@@ -165,7 +163,6 @@ h4 {
     }
 }
 
-/** Iconos Nosotros **/
 @media (min-width: 768px) {
     .iconos-nosotros {
         display: flex;
@@ -183,7 +180,6 @@ h4 {
 .icono h3 {
     text-transform: uppercase;
 }
-/** Anuncios **/
 
 @media (min-width: 768px) {
     .contenedor-anuncios{
@@ -222,7 +218,7 @@ h4 {
     max-width: 500px;
 }
 .iconos-caracteristicas li {
-    /* flex: 1; */
+    
     display: flex;
 }
 .iconos-caracteristicas li img {
@@ -233,7 +229,7 @@ h4 {
     justify-content: flex-end;
 }
 
-/** Contacto Home **/
+
 .imagen-contacto {
     background-image: url(../img/encuentra.jpg);
     background-position: center center;
@@ -250,7 +246,7 @@ h4 {
     font-size: 1.8rem;
 }
 
-/** Sección Inferior **/
+
 @media (min-width: 768px) {
     .seccion-inferior {
         display: flex;
@@ -303,7 +299,7 @@ h4 {
 .texto-entrada span {
     color: #E08709;
 }
-/*** Testimoniales **/
+
 .testimonial {
     background-color: #71B100;
     font-size: 2.4rem;
@@ -328,7 +324,7 @@ h4 {
     padding-left: 5rem;
     font-weight: 300;
 }
-/** Footer **/
+
 .site-footer {
     background-color: #333333;
     margin: 0;
@@ -357,8 +353,7 @@ h4 {
     color: #ffffff;
 }
 
-/** INTERNAS **/
-/* Nosotros **/
+
 @media (min-width: 768px) {
     .contenido-nosotros {
         display: grid;
@@ -374,14 +369,14 @@ h4 {
     padding: 1rem 0 3rem 0;
 }
 
-/** Anuncio **/
+
 .resumen-propiedad {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/** Contacto **/
+
 .contacto p {
     font-size: 1.4rem;
     color: #4f4f4f;
