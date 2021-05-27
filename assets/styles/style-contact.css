@@ -7,11 +7,6 @@ body {
     flex-direction: column;
 }
 
-.site-header.inicio {
-    height: 14vh !important;/*tamaño de la imagen y el vh es para que se adecue para cualquier pantalla*/
-    min-height: 14rem !important;/*minimo de pixeles 60=600px*/
-}
-
 .container {
     margin-left: 10px;
     flex: 1 0 auto;
@@ -24,4 +19,9 @@ body {
 
 footer {
     flex-shrink: 0;
+}
+
+.copyright {
+    margin: 0 !important;
+    color: #ffffff !important;
 }
